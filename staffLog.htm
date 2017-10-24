@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <title>Login</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">    </head>
+    <style>
+	body {
+  	padding-top: 50px;
+	}
+	.spacer {
+  	margin-top: 2%;
+  	margin-bottom: 2%;
+	}      
+	.block {
+ 	height: 300px;
+  	padding-top: 15px;  
+  	background-color: darkblue;
+	}  
+	.block2 {
+ 	min-height: 160px;
+  	padding-top: 15px; 
+	padding-bottom: 15px;
+	}
+
+	.center {
+  	position: absolute;
+  	left: 0;
+  	right: 0;
+  	margin: auto;  
+	}
+
+	.form-horizontal{
+    	display:block;
+    	width:50%;
+    	margin:0 auto;
+	}
+
+	label{
+	float: left;
+	}
+
+    </style>  
+  </head>
+  <body>
+ 
+<div class="container col-lg-12 block">
+        
+        <div class="row col-xs-6 block2 bg-primary center">
+            
+      <form action="log.php" method="post" class="form-horizontal" role="form" align="center">
+	<p>
+        <div class="form-group">
+           <label for="username">Username</label>
+           <input type="username" class="form-control" id="username" placeholder="Your username">
+        </div>
+        <div class="form-group">
+           <label for="password">Password</label>
+           <input type="password" class="form-control" id="password" placeholder="Your password">
+         </div>
+         <button name="login" type="submit" class="btn btn-primary" style="float:right; background-color:black;">Login</button>
+      </form>
+  </div>
+</div>
+</body>
+</html>
