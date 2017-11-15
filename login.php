@@ -11,7 +11,7 @@ require 'config.php';
    if(!mysqli_num_rows($query))
 	echo "No results found.";
    else {
-	header("Location: entry.htm");
+	header("Location: home.htm");
 
    }    
    

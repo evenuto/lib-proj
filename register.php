@@ -10,7 +10,7 @@ $sql = "INSERT INTO Staff(ID, UserName, Password, Email)
 	VALUES('$NPid', '$user', '$pass', '$email')";
 
 if (mysqli_query($conn, $sql)) {
-    header("Location: homepage.html");
+    header("Location: index.html");
 } else {
     echo "Error:  " . $sql . "<br>" . mysqli_error($conn);
 } 

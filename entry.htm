@@ -1,72 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <title>Data Entry</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">    </head>
-    <style>
-	body {
-  	padding-top: 50px;
-	}
-	.spacer {
-  	margin-top: 2%;
-  	margin-bottom: 2%;
-	}      
-	.block {
- 	height: 400px;
-  	padding-top: 15px;  
-  	background-color: darkblue;
-	}  
-	.block2 {
- 	min-height: 160px;
-  	padding-top: 15px; 
-	padding-bottom: 15px;
-	}
+    <head>
 
-	.center {
-  	position: absolute;
-  	left: 0;
-  	right: 0;
-  	margin: auto;  
-	}
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Data Entry</title>
 
-	.form-horizontal{
-    	display:block;
-    	width:50%;
-    	margin:0 auto;
-	}
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/css/form-elements.css">
+        <link rel="stylesheet" href="assets/css/style.css">
 
-	label{
-	float: left;
-	}
+	 <link rel="shortcut icon" href="assets/ico/favicon.png">
+    </head>
 
-    </style>  
-  </head>
-  <body>
- 
-<div class="container col-lg-12 block">
-  <div class="row col-xs-6 block2 bg-primary center">
-      <form action="insertData.php" method="post" class="form-horizontal" role="form" align="center">
-	<p>
-        <div class="form-group">
-           <label for="area1">Area 1</label>
-           <input type="number" class="form-control" name="area1" placeholder="Area 1 Count">
+    <body>
+
+        <!-- Top content -->
+        <div class="top-content">
+        	
+            <div class="inner-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3 form-box">
+                        	<div class="form-top">
+                        		<div class="form-top-left">
+                        			<h3>Add a data entry here:<h3>
+                            		 </div>
+                                </div>
+                            <div class="form-bottom">
+			                    <form role="form" action="insertData.php" method="post" class="login-form">
+			                        <div class="form-group">
+			                    	<label class="sr-only" for="area1">Area 1</label>
+			                        	<input type="number" name="area1" placeholder="Area 1 Count" class="form-control" id="form-area1">
+			                        </div>
+			                        <div class="form-group">
+			                    	<label class="sr-only" for="area2">Area 2</label>
+			                        	<input type="number" name="area2" placeholder="Area 2 Count" class="form-control" id="form-area2">
+			                        </div>
+					    <div class="form-group">
+			                    	<label class="sr-only" for="area3">Area 3</label>
+			                        	<input type="number" name="area3" placeholder="Area 3 Count" class="form-control" id="form-area3">
+			                        </div>
+			                        <button name="submit" type="submit" class="btn" style="background-color:black;">Submit</button>
+			                    </form>
+		                    </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
         </div>
-        <div class="form-group">
-           <label for="area1">Area 2</label>
-           <input type="number" class="form-control" name="area2" placeholder="Area 2 Count">
-         </div>
-	 <div class="form-group">
-           <label for="area1">Area 3</label>
-           <input type="number" class="form-control" name="area3" placeholder="Area 3 Count">
-         </div>
-         <button type="submit" name="submit" class="btn btn-primary" style="float:right; background-color:black;">Register</button>
-      </form>
-  </div>
-</div>
 
-</body>
+
+        <!-- Javascript -->
+        <script src="assets/js/jquery-1.11.1.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.backstretch.min.js"></script>
+        <script src="assets/js/scripts.js"></script>
+        
+        <!--[if lt IE 10]>
+            <script src="assets/js/placeholder.js"></script>
+        <![endif]-->
+
+    </body>
+
 </html>
