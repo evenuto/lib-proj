@@ -38,19 +38,19 @@
 		            <form role="form" action="register.php" method="post" class="login-form">
 			      <div class="form-group">
 			          <label class="sr-only" for="id">N Number</label>
-			          <input type="number" name="id" placeholder="Enter a valid N Number" class="form-control" id="form-id">
+			          <input type="number" name="id" placeholder="Enter a valid N Number" class="form-control" id="form-id" required>
 			      </div>
 			      <div class="form-group">
 			          <label class="sr-only" for="username">Username</label>
-			          <input type="text" name="username" placeholder="Enter a username" class="form-control" id="form-username">
+			          <input type="text" name="username" placeholder="Enter a username" class="form-control" id="form-username" required>
 			      </div>
 			      <div class="form-group">
 			          <label class="sr-only" for="password">Password</label>
-			          <input type="password" name="password" placeholder="Enter a password" class="form-control" id="form-password">
+			          <input type="password" name="password" placeholder="Enter a password" class="form-control" id="form-password" required>
 			      </div>
 	                 	      <div class="form-group">
            			<label class="sr-only" for="email">Email</label>
-           			<input type="email" class="form-control form-email" name="email" placeholder="Enter an email address">
+           			<input type="email" class="form-control form-email" name="email" placeholder="Enter an email address" required>
          			      </div>
 			      <button name="register" type="submit" class="btn" style="background-color:black;">Register</button>
 			  </form>

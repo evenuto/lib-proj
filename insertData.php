@@ -12,8 +12,9 @@ $sql = "INSERT INTO Visit(Time, Area_1, Area_2, Area_3)
 	VALUES('$date', '$a1', '$a2', '$a3')";
 
 if (mysqli_query($conn, $sql)) {
-    header("Location: home.htm");
-} else {
+    echo "<script>
+window.location.href='success.htm';
+</script>";} else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 } 
 

@@ -7,7 +7,20 @@ require 'config.php';
     <head>
         <title>Display Chart</title>
  
-	<link rel="shortcut icon" href="assets/ico/favicon.png">
+	<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Display Chart</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/form-elements.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+
+	 <link rel="shortcut icon" href="assets/ico/favicon.png">
+
 
         <!-- load Google AJAX API -->
         <script type="text/javascript" src="http://www.google.com/jsapi"></script>
@@ -37,14 +50,14 @@ require 'config.php';
 	      var totals = <?php echo json_encode($row) ?>;
 	      
                 //define rows of data
-                dataTable.addRows([['Area 1',parseInt(totals[0])], ['Area 2',parseInt(totals[1])],['Area 3',parseInt(totals[2])]]);
+                dataTable.addRows([['Floor 1',parseInt(totals[0])], ['Floor 2',parseInt(totals[1])],['Floor 3',parseInt(totals[2])]]);
  
                 //instantiate our chart object
                 var chart = new google.visualization.ColumnChart (document.getElementById('chart'));
 		var secondChart = new google.visualization.PieChart (document.getElementById('chart2')); 		
 
                 //define options for visualization
-                var options = {width: 400, height: 240, is3D: true, title: 'Visit Stats by Area'};
+                var options = {width: 400, height: 240, is3D: true};
  
                 //draw our chart
                 chart.draw(dataTable, options);
@@ -57,10 +70,13 @@ require 'config.php';
  
     <body>
  
-        <!--Div for our chart -->
+	<h2>Cumulative Visit Stats for Today</h2>
+        <!--Div for charts -->
         <div id="chart"></div>
 	<div id="chart2"></div>
+	<div>
+   	  <a href="home.htm" class="btn btn-lg active" role="button" >Return to previous page</a>
+	</div>
 
- 
     </body>
 </html>
