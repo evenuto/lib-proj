@@ -9,7 +9,7 @@
         <title>Data Table Display</title>
 
         <!-- CSS -->
-        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
 		<link rel="stylesheet" href="assets/css/form-elements.css">
@@ -46,9 +46,9 @@ th, td {
   if ($result->num_rows > 0) {
     echo "<table><tr>
 	<th>Time</th>
-	<th>Floor 1</th>
-	<th>Floor 2</th>
-	<th>Floor 3</th>
+	<th>Main Floor</th>
+	<th>Concourse</th>
+	<th>Ground Floor</th>
 	</tr>";
 
     // output data of each row

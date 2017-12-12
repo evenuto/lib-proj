@@ -13,7 +13,7 @@ require 'config.php';
         <title>Display Chart</title>
 
         <!-- CSS -->
-        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="assets/css/form-elements.css">
@@ -23,8 +23,11 @@ require 'config.php';
 
 
         <!-- load Google AJAX API -->
-        <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
         <script type="text/javascript">
+		
+		<!-- These charts show sum of all entries in Visit table for each floor -->
+		
             //load the Google Visualization API and the chart
             google.load('visualization', '1', {'packages':['columnchart','piechart']});
  
@@ -50,7 +53,7 @@ require 'config.php';
 	      var totals = <?php echo json_encode($row) ?>;
 	      
                 //define rows of data
-                dataTable.addRows([['Floor 1',parseInt(totals[0])], ['Floor 2',parseInt(totals[1])],['Floor 3',parseInt(totals[2])]]);
+                dataTable.addRows([['Main Floor',parseInt(totals[0])], ['Concourse',parseInt(totals[1])],['Ground Floor',parseInt(totals[2])]]);
  
                 //instantiate our chart object
                 var chart = new google.visualization.ColumnChart (document.getElementById('chart'));
